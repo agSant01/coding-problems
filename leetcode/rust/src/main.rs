@@ -1,4 +1,4 @@
-mod _1396_design_underground_system;
+mod problems;
 
 fn main() {
     println!("Hello, world!");

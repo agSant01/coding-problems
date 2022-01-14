@@ -60,7 +60,7 @@ impl UndergroundSystem {
 //  let ret_3: f64 = obj.get_average_time(startStation, endStation);
 
 #[test]
-fn test1() {
+fn test() {
     let mut underground_system: UndergroundSystem = UndergroundSystem::new();
     underground_system.check_in(10, String::from("Leyton"), 3);
     underground_system.check_out(10, String::from("Paradise"), 8); // Customer 10 String::from("Leyton") -> String::from("Paradise") in 8-3 = 5
