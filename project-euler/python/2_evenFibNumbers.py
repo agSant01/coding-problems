@@ -10,17 +10,16 @@ find the sum of the even-valued terms.
 
 
 def find_fib(max):
-    p1 = 0
-    p2 = 1
-    next_ = 0
+    p1 = 1
+    next_ = 2
+    t = None
     result = 0
     while next_ < max:
         if next_ % 2 == 0:
             result += next_
-
-        next_ = p2 + p1
-        p1 = p2
-        p2 = next_
+        t = next_
+        next_ += p1
+        p1 = t
 
     return result
 

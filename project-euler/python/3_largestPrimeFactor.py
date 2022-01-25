@@ -15,17 +15,17 @@ def largest_prime_factor(number: int) -> int:
         if number % i == 0:
             factors.append(i)
 
-    pf = []
+    largest_pf = None
     for factor in factors:
         isP = True
-        for i in range(2, factor):
+        for i in range(2, math.ceil(factor ** 0.5)):
             if factor % i == 0:
                 isP = False
                 break
         if isP:
-            pf.append(factor)
+            largest_pf = factor
 
-    return pf[-1]
+    return largest_pf
 
 
 print('Result =>', largest_prime_factor(13195))
